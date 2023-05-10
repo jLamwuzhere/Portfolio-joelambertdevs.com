@@ -233,6 +233,10 @@ p{
     padding: 1%;
 }
 
+h3 a:visited{
+    color: cornflowerblue;
+}
+
 .oneProject{
     width: 90%;
     margin: 0% 5% 4%;
