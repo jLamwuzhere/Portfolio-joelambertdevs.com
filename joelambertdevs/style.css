@@ -1,24 +1,33 @@
 *{
     margin: 0;
     padding: 0;
-    color: whitesmoke;
-    font-family: sans-serif;
-    font-size: large;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .container{
+    color: whitesmoke;
     background-color: rgb(37, 69, 157);
+    font-family: sans-serif;
+    font-size: large;
+    
 }
 
-/* html{
+html{
     scroll-behavior: smooth;
-} */
+}
 
 .heading{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: beige; */
+    /* background-color: rgb(16, 111, 228); */
     color: white;
 }
 
@@ -31,18 +40,17 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0;
     padding: .5rem 0;
 }
 
 .list{
     list-style: none;
-    font-size: larger
+    font-size: larger;
 }
 
 .list a{
     text-decoration: none;
-    padding: 1rem;
+    padding: .1rem 1rem;
     color: white;
 }
 
@@ -51,6 +59,8 @@
     border-radius: .5%;
     border-style: solid;
     border-color: dodgerblue;
+    text-decoration: solid .5% dodgerblue;
+    /* padding: 1%; */
     /* padding-top: 1%;
     padding-bottom: 1%; */
     /* text-transform: uppercase; */
@@ -79,7 +89,15 @@
 }
 
 /* This tells the hamburger menu when to activate and how to adjust*/
-@media (max-width: 650px) {
+@media (max-width: 775px) {
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
     .toggle-button {
         display: flex;
     }
@@ -106,10 +124,18 @@
     .textbox {
         flex-direction: column;
     }
+
+    .hero{
+        flex-direction: column;
+    }
+
+    .list.active{
+        display: flex;
+    }
 }
 
 hr{
-    margin-bottom: 2%;
+    margin-bottom: 0 2%;
 }
 
 .pic{
@@ -159,6 +185,21 @@ hr{
 strong{
     color: aqua;
     font-weight: 500;
+}
+
+.return{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 4% 1% 0%;
+    padding-left: 4%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.return a:visited{
+    color: black;
 }
 
 .projects{
@@ -258,7 +299,7 @@ p{
 }
 
 .downloadResume{
-    margin: 0% 46%;
+    /* margin-left: 40%; */
     /* border-radius: 15%; */
     padding: .1% .4%;
     background-color: blue;
@@ -269,8 +310,19 @@ p{
     font-weight: bold;
 }
 
+.downloadTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 hr{
     margin-top: 1%;
+}
+
+.icon{
+    width: 3rem;
 }
 /* #seeproject{
 } */
